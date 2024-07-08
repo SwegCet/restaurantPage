@@ -25,7 +25,7 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-            templae: './src/index.html',
+            template: './src/index.html',
         }),
     ],
 };

@@ -1,5 +1,6 @@
 import { loadHomePage } from "./pages/home";
 import { loadMenuPage } from "./pages/menu";
+import { loadAboutPage } from "./pages/about";
 import './styles/style.css';
 
 //Remove current content (if any)
@@ -35,5 +36,8 @@ menuButton.addEventListener('click', () => {
 });
 
 //about button
-
+aboutButton.addEventListener('click', () => {
+    removeContent();
+    loadAboutPage();
+})
 console.log('Prophet Save Me');

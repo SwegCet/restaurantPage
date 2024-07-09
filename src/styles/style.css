@@ -12,13 +12,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #EAEA3B;
+    padding: 10px;
 }
 
 nav .restaurant-name {
     font-weight: bold;
     font-size: 24px;
     justify-content: start;
-    padding: 10px;
 }
 
 button {
@@ -33,7 +33,15 @@ button {
 
 /*for the home page*/
 
-
+.copyright {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+    padding: 10px;
+}
 
 /*for the menu page*/
 .menu-grid {
@@ -45,11 +53,62 @@ button {
 
 .menu-grid>div {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: aqua;
     border-radius: 10px;
+    height: 200px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+.price {
+    display: flex;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    right: 0;
+    bottom: 0;
 }
 
 /* for the about page*/
+
+.aboutUs-card {
+    display: flex;
+    border: 5px solid red;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.location-card {
+    display: flex;
+    border: 5px solid red;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-card {
+    display: flex;
+    border: 5px solid red;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}

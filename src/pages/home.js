@@ -13,14 +13,14 @@ export function loadHomePage() {
 
     const welcomeMessage = document.createElement('div');
     welcomeMessage.textContent = 'Welcome to Kopkan Ramen Bar';
-
+    welcomeMessage.className = 'welcome';
     const intro = document.createElement('div');
     intro.textContent = 'Asian Fusion Experience located in the Bay Area';
-
+    intro.className = 'intro';
     //APPEND THE CONTENT
     textBox.appendChild(welcomeMessage);
     textBox.appendChild(intro);
 
     content.appendChild(h1);
     content.appendChild(textBox);
-}
+};

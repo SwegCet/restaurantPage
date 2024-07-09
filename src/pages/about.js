@@ -3,6 +3,9 @@ export function loadAboutPage() {
     const content = document.querySelector('#content');
 
     //create about us section
+    const header = document.createElement('h1');
+    header.textContent = 'About Us';
+
     const aboutUsCard = document.createElement('div');
     aboutUsCard.className = 'aboutUs-card';
     const aboutUs = document.createElement('div');
@@ -19,7 +22,7 @@ export function loadAboutPage() {
     locationCard.className = 'location-card';
     const location = document.createElement('div');
     location.className = 'location';
-    location.textContent = 'Located at :123 Fusion Street, San Francisco, CA 94105'
+    location.textContent = 'Located at : 123 Fusion Street, San Francisco, CA 94105'
 
     //create contact section
     const contactCard = document.createElement('div');
@@ -41,6 +44,7 @@ export function loadAboutPage() {
     contactCard.appendChild(email);
     contactCard.appendChild(phoneNumber);
     //append content
+    content.appendChild(header);
     content.appendChild(aboutUsCard);
     content.appendChild(locationCard);
     content.appendChild(contactCard);

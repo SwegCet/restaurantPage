@@ -1,3 +1,10 @@
+import gyozaPicture from '../imgs/gyoza.jpg';
+import phoPicture from '../imgs/pho.jpg';
+import mapoTofuPicture from '../imgs/mapo_tofu.jpg';
+import ramenPicture from '../imgs/tonkotsu.jpg';
+import padThaiPicture from '../imgs/pad_thai.jpg';
+import friedRicePicture from '../imgs/fried-rice.jpg';
+
 export function loadMenuPage() {
     //select content div
     const content = document.querySelector('#content');
@@ -13,7 +20,8 @@ export function loadMenuPage() {
     gyozaName.textContent = 'Gyoza';
     gyozaName.className = 'name';
     const gyozaImage = document.createElement('img');
-    gyozaImage.src = ''; //Fill in with path of image
+    gyozaImage.className = 'img';
+    gyozaImage.src = gyozaPicture;
     const gyozaDescription = document.createElement('div');
     gyozaDescription.className = 'description';
     gyozaDescription.textContent = 'Savory Japanese dumplings filled with seasoned meat and vegetables, pan-fried to perfection.'; //Fill in description
@@ -29,7 +37,8 @@ export function loadMenuPage() {
     phoName.textContent = 'Pho';
     phoName.className = 'name';
     const phoImage = document.createElement('img');
-    phoImage.src = ''; //Fill in with path of image
+    phoImage.className = 'img';
+    phoImage.src = phoPicture;
     const phoDescription = document.createElement('div');
     phoDescription.className = 'description';
     phoDescription.textContent = 'Vietnamese noodle soup with aromatic broth, tender beef slices, fresh herbs, and rice noodles.'; //Fill in description
@@ -45,7 +54,8 @@ export function loadMenuPage() {
     mapoTofuName.textContent = 'Mapo Tofu';
     mapoTofuName.className = 'name';
     const mapoTofuImage = document.createElement('img');
-    mapoTofuImage.src = ''; //Fill in with path of image
+    mapoTofuImage.className = 'img';
+    mapoTofuImage.src = mapoTofuPicture;
     const mapoTofuDescription = document.createElement('div');
     mapoTofuDescription.className = 'description';
     mapoTofuDescription.textContent = 'Spicy Sichuan dish featuring silky tofu in a rich, flavorful chili bean sauce with minced pork.'; //Fill in description
@@ -61,7 +71,8 @@ export function loadMenuPage() {
     ramenName.textContent = 'Ramen';
     ramenName.className = 'name';
     const ramenImage = document.createElement('img');
-    ramenImage.src = ''; //Fill in with path of image
+    ramenImage.className = 'img';
+    ramenImage.src = ramenPicture;
     const ramenDescription = document.createElement('div');
     ramenDescription.className = 'description';
     ramenDescription.textContent = 'Hearty Japanese noodle soup with rich broth, tender meat, and assorted toppings like eggs and vegetables.'; //Fill in description
@@ -77,7 +88,8 @@ export function loadMenuPage() {
     padThaiName.textContent = 'Pad Thai';
     padThaiName.className = 'name';
     const padThaiImage = document.createElement('img');
-    padThaiImage.src = ''; //Fill in with path of image
+    padThaiImage.className = 'img';
+    padThaiImage.src = padThaiPicture;
     const padThaiDescription = document.createElement('div');
     padThaiDescription.className = 'description';
     padThaiDescription.textContent = 'Classic Thai stir-fried rice noodles with shrimp or chicken, bean sprouts, peanuts, and a tangy sauce.'; //Fill in description
@@ -93,7 +105,8 @@ export function loadMenuPage() {
     friedRiceName.textContent = 'Fried Rice';
     friedRiceName.className = 'name';
     const friedRiceImage = document.createElement('img');
-    friedRiceImage.src = ''; //Fill in with path of image
+    friedRiceImage.className = 'img';
+    friedRiceImage.src = friedRicePicture;
     const friedRiceDescription = document.createElement('div');
     friedRiceDescription.className = 'description';
     friedRiceDescription.textContent = 'Flavorful stir-fried rice with mixed vegetables, egg, and your choice of meat or tofu.'; //Fill in description
